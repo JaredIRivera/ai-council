@@ -1,0 +1,118 @@
+{
+  "run_utc": "2026-10-29T15:03:44.886160+00:00",
+  "python": "3.11.15",
+  "model_calls": 0,
+  "checks": [
+    {
+      "case": "accept everyday-scheduling",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "accept research-training",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "accept decision-maintenance",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "accept technical-job-queue",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "reject missing decision",
+      "passed": true,
+      "expected_error": "decision must be nonempty text",
+      "observed_errors": [
+        "decision must be nonempty text"
+      ]
+    },
+    {
+      "case": "reject unsupported mode",
+      "passed": true,
+      "expected_error": "mode must be simulated or isolated",
+      "observed_errors": [
+        "mode must be simulated or isolated"
+      ]
+    },
+    {
+      "case": "reject duplicate mandates",
+      "passed": true,
+      "expected_error": "duplicate mandates",
+      "observed_errors": [
+        "duplicate mandates"
+      ]
+    },
+    {
+      "case": "reject no adversarial seat",
+      "passed": true,
+      "expected_error": "an adversarial analyst is required",
+      "observed_errors": [
+        "an adversarial analyst is required"
+      ]
+    },
+    {
+      "case": "reject missing chair",
+      "passed": true,
+      "expected_error": "chair must be nonempty text",
+      "observed_errors": [
+        "chair must be nonempty text"
+      ]
+    },
+    {
+      "case": "reject zero rounds",
+      "passed": true,
+      "expected_error": "rounds must be a positive integer",
+      "observed_errors": [
+        "rounds must be a positive integer"
+      ]
+    },
+    {
+      "case": "reject boolean rounds",
+      "passed": true,
+      "expected_error": "rounds must be a positive integer",
+      "observed_errors": [
+        "rounds must be a positive integer"
+      ]
+    },
+    {
+      "case": "reject missing confidence output",
+      "passed": true,
+      "expected_error": "required synthesis fields are missing",
+      "observed_errors": [
+        "required synthesis fields are missing"
+      ]
+    },
+    {
+      "case": "reject malformed seat",
+      "passed": true,
+      "expected_error": "each seat must be an object",
+      "observed_errors": [
+        "each seat must be an object"
+      ]
+    },
+    {
+      "case": "reject invalid evidence type",
+      "passed": true,
+      "expected_error": "evidence must be nonempty text",
+      "observed_errors": [
+        "evidence must be nonempty text"
+      ]
+    },
+    {
+      "case": "reject technical briefing without validation status",
+      "passed": true,
+      "observed_errors": [
+        "technical brief requires validation_status"
+      ]
+    }
+  ],
+  "passed": true,
+  "passed_count": 15,
+  "check_count": 15,
+  "limits": "These fixtures test local input validation, not model behavior or factual accuracy."
+}

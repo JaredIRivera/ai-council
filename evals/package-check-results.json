@@ -1,0 +1,103 @@
+{
+  "run_utc": "2026-10-29T15:03:44.815741+00:00",
+  "python": "3.11.15",
+  "package_version": "1.0.1",
+  "skill_sha256": "b6c0c8484bb6cdd850f6c8a8c4e6b6db1bbd3dfb767ed94a4134ee81da3ca41a",
+  "model_calls": 0,
+  "checks": [
+    {
+      "name": "required files",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "skill fingerprint",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "skill metadata",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "all four source templates",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "complete source sections",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "execution safeguards",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "reference README heading order",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "assistant setup subsection",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "agent invocation",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "internal file links",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "balanced code fences",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "specified private-path credential and vault-link patterns",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "no em dash punctuation",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "four briefing families",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "briefing everyday-scheduling",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "briefing research-training",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "briefing decision-maintenance",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "briefing technical-job-queue",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "passed": true,
+  "passed_count": 18,
+  "check_count": 18,
+  "limits": "Structural package and briefing validation only; no host installation, model behavior, latency, or cost measurement."
+}

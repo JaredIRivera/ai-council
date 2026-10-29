@@ -1,0 +1,21 @@
+{
+  "package_version": "1.0.1",
+  "source_sha256": "023fd689a8c3f1fe2e3936a4a046bdfc87d1fcf2bbd431cbad95394849399751",
+  "skill_sha256": "b6c0c8484bb6cdd850f6c8a8c4e6b6db1bbd3dfb767ed94a4134ee81da3ca41a",
+  "templates": [
+    "Template 1: Everyday AI Council",
+    "Template 2: Research-Grade AI Council",
+    "Template 3: Decision-Making AI Council",
+    "Template 4: Coding / Technical Review AI Council"
+  ],
+  "readme_h2": [
+    "What you can accomplish",
+    "Quick start",
+    "Working examples",
+    "How it works and design choices",
+    "Recorded results",
+    "Running checks and experiments",
+    "Project status and next decisions",
+    "Glossary"
+  ]
+}

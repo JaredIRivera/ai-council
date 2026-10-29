@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "kind": "synthetic briefing fixtures, not model outputs",
+  "cases": [
+    {
+      "id": "everyday-scheduling",
+      "template": "everyday",
+      "mode": "simulated",
+      "decision": "Should a volunteer group build a custom scheduling app?",
+      "context": "Six coordinators schedule 30 volunteers weekly; two corrections occur each week.",
+      "evidence": "Synthetic facts supplied for this example; causes of corrections are not measured.",
+      "constraints": "No hosting budget, two maintainer hours weekly, no personal volunteer records.",
+      "seats": [
+        {"role": "Domain Expert", "mandate": "Assess workflow and maintenance fit", "adversarial": false},
+        {"role": "Regular Person", "mandate": "Assess coordinator usability", "adversarial": false},
+        {"role": "Devil's Advocate", "mandate": "Make the strongest case against the proposed direction", "adversarial": true}
+      ],
+      "chair": "Weigh evidence and preserve disagreement",
+      "rounds": 1,
+      "required_outputs": ["recommendation", "evidence", "disagreements", "confidence", "revision_conditions", "next_action"]
+    },
+    {
+      "id": "research-training",
+      "template": "research",
+      "mode": "isolated",
+      "decision": "What evidence would justify a new employee training format?",
+      "context": "Compare two formats for an internal learning program.",
+      "evidence": "Synthetic study summaries will be supplied; no actual studies are included.",
+      "constraints": "Do not invent studies or infer causal effects from unreviewed summaries.",
+      "seats": [
+        {"role": "Methodologist", "mandate": "Assess confounding and study design", "adversarial": false},
+        {"role": "Evidence Synthesizer", "mandate": "Assess findings across supplied evidence", "adversarial": false},
+        {"role": "Contrarian Reviewer", "mandate": "Identify strongest evidence against the favored interpretation", "adversarial": true}
+      ],
+      "chair": "Separate factual and methodological disputes",
+      "rounds": 2,
+      "required_outputs": ["recommendation", "evidence", "disagreements", "confidence", "revision_conditions", "next_action"]
+    },
+    {
+      "id": "decision-maintenance",
+      "template": "decision",
+      "mode": "isolated",
+      "decision": "Should a small team add a new automation this quarter?",
+      "context": "The team has a fixed maintenance budget and an existing manual process.",
+      "evidence": "Synthetic workload estimates; no measured savings are supplied.",
+      "constraints": "No purchasing, deployment, external messages, or access to customer records.",
+      "seats": [
+        {"role": "Strategic Analyst", "mandate": "Assess opportunity cost and long-term fit", "adversarial": false},
+        {"role": "Risk Officer", "mandate": "Assess failure risks and cost of inaction", "adversarial": false},
+        {"role": "Devil's Advocate", "mandate": "Argue the strongest alternative to automation", "adversarial": true}
+      ],
+      "chair": "Recommend a reversible next decision with conditions",
+      "rounds": 2,
+      "required_outputs": ["recommendation", "evidence", "disagreements", "confidence", "revision_conditions", "next_action"]
+    },
+    {
+      "id": "technical-job-queue",
+      "template": "technical",
+      "mode": "isolated",
+      "decision": "What needs verification before adopting the supplied job-queue design?",
+      "context": "An internal single-region service processes retryable report jobs.",
+      "evidence": "Sanitized design and code must be supplied before actual findings can be made.",
+      "constraints": "Read-only review; do not execute commands, change code, contact services, or deploy.",
+      "seats": [
+        {"role": "Security Auditor", "mandate": "Assess authorization and data exposure", "adversarial": false},
+        {"role": "Maintainability Auditor", "mandate": "Assess retry correctness and recoverability", "adversarial": false},
+        {"role": "Red Team", "mandate": "Trace the strongest concrete failure scenario", "adversarial": true}
+      ],
+      "chair": "Prioritize candidate findings and required validation",
+      "rounds": 1,
+      "required_outputs": ["recommendation", "evidence", "disagreements", "confidence", "revision_conditions", "next_action", "validation_status"]
+    }
+  ]
+}

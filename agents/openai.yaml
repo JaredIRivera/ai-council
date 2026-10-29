@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Council"
+  short_description: "Distinct perspectives and evidence-based decision reviews"
+  default_prompt: "Use $ai-council to review this question through distinct analytical roles, preserve disagreements, and synthesize a recommendation with evidence and conditions for revision."
