@@ -1,6 +1,6 @@
 # AI Council
 
-**A framework for reviewing decisions through distinct analytical roles. It provides complete prompts for independent initial analysis, focused critique, and a final recommendation that preserves meaningful disagreements.**
+**Make a decision with a clear recommendation, the reasons behind it, and the uncertainties that could change it. Use distinct expert perspectives to question assumptions, examine evidence, and preserve useful disagreement.**
 
 A council assigns different jobs to an AI assistant: examine the evidence, question the assumptions, identify risks, and synthesize the result. A chair weighs the reasoning and explains which findings support the recommendation. This makes the decision easier to inspect and gives the user specific conditions that would change it.
 
@@ -30,7 +30,7 @@ python scripts/check_package.py
 python evals/check-fixtures.py
 ```
 
-Both commands print JSON reports and return a nonzero exit code if a check fails. They do not install dependencies, send data, or overwrite saved results. Access to the private repository requires an authorized GitHub account.
+Both commands print JSON reports and return a nonzero exit code if a check fails. They do not install dependencies, send data, or overwrite saved results. If repository access is restricted, authenticate with an authorized GitHub account.
 
 ### Use the skill in your assistant
 
@@ -162,7 +162,9 @@ The exported source clarifies those boundaries, replaces unsupported optimum cla
 
 Keep secrets, private profile records, and unnecessary personal or client information out of briefings and transcripts. Review the selected model's data handling before sending sensitive material. Technical findings need code or test evidence; external actions remain subject to the caller's authorization.
 
-Maintained by Jared Rivera. Report issues through GitHub; no external support commitment is stated. No license has been selected; contact the owner before reuse or redistribution. See [release notes](RELEASE_NOTES.md) for remaining production checks.
+I help people turn complex AI tools into clear, practical workflows that reduce repetitive work. I'm Jared Rivera, an AI automation engineer and consultant focused on systems people can understand and use.
+
+Maintained by [Jared Rivera](https://github.com/JaredIRivera). Report issues through GitHub; no external support commitment is stated. No license has been selected; contact the owner before reuse or redistribution. See [release notes](RELEASE_NOTES.md) for remaining production checks.
 
 ## Glossary
 
